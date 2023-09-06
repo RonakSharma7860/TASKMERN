@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" type="text/css" href="task7.css"> -->
+    <style>
+        body{
+    background-color: #960352;
+}
+.container{
+   
+max-width: 350px;
+width: 100%;
+background-color: #70023d;
+margin: 20px auto;
+padding: 20px 50px ;
+
+} 
+.input_f{
+    margin-bottom: 15px; 
+    display: flex;
+    color: white;
+ }
+ .input_f .lab{
+    
+    width: 30%;
+
+ }
+ .input_f .inp{
+ 
+    width: 50%;
+ }
+ #Reg{
+    
+    width: 100%;
+    margin: 5px auto;
+    height: 40px;
+border-radius: 4px;
+font-weight: bold;
+ }
+ #ab{
+    height:30px ;
+ }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <form action="">
+      <div class="input_f">
+        <label class="lab"  for="name">Name:</label>
+        <input class="inp" type="text">
+    </div>
+    <div class="input_f">
+        <label class="lab" for="name">Email:</label>
+        <input  class="inp" type="text">
+    </div>
+    <div class="input_f">
+        <label class="lab"   for="name">Phone Number:</label>
+        <input  class="inp" type="number">
+    </div>
+        <!-- gender filed starts herer -->
+        <div class="input_f">
+        <label class="lab"  for="name">Gender:</label>
+        <label for="Male">Male:</label>
+        <input type="radio" id="Male" name="gender">
+        <label for="Female">Female:</label>
+        <input type="radio" id="Female" name="gender">
+        <label for="other">other:</label>
+        <input type="radio" id="other" name="gender">
+        </div>
+        <!-- gender field ends herer -->
+        <div class="input_f">
+        <label class="lab"   for="Language">Language:</label>
+        <select name="lang">
+            <option value="sl">Select Lanaguage</option>
+        </select>
+    </div>
+    <div class="input_f">
+        <label  class="lab"  for="name">Zip Code:</label>
+        <input class="inp" type="number">
+    </div>
+    <div class="input_f">
+        <label  class="lab" for="name">About:</label>
+        <input class="inp" id="ab" type="text" placeholder="Write about yourself...">
+       </div>
+     <div >
+        <button id="Reg">Register</button>
+        </div>
+
+    </form>
+</div>
+</body>
+</html>

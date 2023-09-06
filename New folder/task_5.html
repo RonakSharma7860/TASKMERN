@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task52.0</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(215, 215, 1);
+        }
+
+        .container {
+            display: flex;
+            position: fixed;
+            overflow: auto;
+            background-color: rgb(215, 215, 1);
+            flex-direction: column;
+            width: 25%;
+            height: 100%;
+            
+            padding: 40px 0 0 10px;
+
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(215, 215, 1);
+        }
+
+        li {
+            background-color: white;
+            margin: 5px;
+
+            overflow: auto;
+            background-color: rgb(255, 255, 255);
+            flex-direction: column;
+            box-sizing: border-box;
+            margin: 8px;
+            padding: 2px;
+            position: relative;
+            padding-right: 20px;
+        }
+
+        li::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 15px;
+            height: 100%;
+            background-color: black;
+        }
+
+
+        li a {
+            text-decoration: none;
+            /* color: rgba(7, 6, 6, 0.822); */
+            display: block;
+            padding: 4px 10px;
+            padding-bottom: 10px;
+
+        }
+
+        li a:hover {
+            background-color: whitesmoke;
+
+        }
+
+        /* li a.active{
+            background-color: orange;
+            color: white;
+        } */
+        .outside{
+            margin-top: 2vh;
+            margin-left: 30%;
+            
+            
+          
+        }
+        p,h1{
+            color: purple;
+            margin: 8px;
+        }
+        #last{
+            padding-bottom: 12px;
+            border-bottom: 1px dotted purple;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="container">
+        <ul>
+            <li><a class="active" href="#home"><span>Home page</span>
+                    <div class="ic"></div>
+
+                </a></li>
+            <li><a href="#" target="_blank">Musings</a></li>
+            <li><a href="#" target="_blank">My town</a></li>
+            <li><a href="#" target="_blank">Links</a></li>
+        </ul>
+    </div>
+    <div class="outside">
+        <p>
+            <h1>My first styled page</h1>
+        </p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        <p id="last">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis facilis maiores, qui dolores officiis possimus tempore id molestiae eius fugit.</p>
+        <p>Made 5april 2004 <br>sit amet.</p>
+    </div>
+
+
+</body>
+
+</html>
